@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+canvas {
+    width: 100%;
+    height: calc(100vh - 4px);
+}
+
+#settings {
+    position: absolute;
+    background-color: white;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    align-items: center;
+    border-radius: 10px;
+    padding: 30px 100px;
+}
+
+#settings strong {
+    display: block;
+}
+
+#settings input {
+    margin: 0 5px;
+    height: 100%;
+    transform: translateY(1px);
+}
+
+#settings input:not([type=color]) {
+    border: 1px solid black;
+}
+
+#settings input[type=checkbox] {
+    margin-left: 0;
+}
+
+#settings input[type="number"],
+#settings input[type="text"] {
+    padding: 0 2px;
+}
+
+#settings .parameter {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+    height: 25px;
+}
+
+#settings h2 {
+    margin-top: 20px;
+}
+
+button {
+    cursor: pointer;
+    padding: 5px 30px;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 20px;
+}
