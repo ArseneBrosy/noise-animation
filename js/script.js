@@ -5,12 +5,12 @@ let ctx = canvas.getContext("2d");
 canvas.width = canvas.clientWidth;
 canvas.height = canvas.clientHeight;
 
-const pixelSize = 7;
+const pixelSize = 5;
 const perlinZoom = 0.003;
 const octaveMul = 5;
-const octaveWeightMul = 0.1;
-const octaves = 4;
-const speed = 0.005;
+const octaveWeightMul = 0.15;
+let octaves = 2;
+const speed = 0.03;
 noise.seed(Math.random());
 
 let z = 0;
@@ -30,4 +30,4 @@ setInterval(() => {
         }
     }
     z += speed;
-}, 0);
+}, 10);
